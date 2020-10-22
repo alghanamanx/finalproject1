@@ -1,0 +1,186 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  html {
+    height: 100%;
+  }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      /* Create a column layout with Flexbox */
+      .row {
+        display: flex;
+      }
+      
+      /* Left column (menu) */
+      .left {
+        flex: 70%;
+        padding: 90px ;
+      }
+      
+      .left h2 {
+        padding-left: 8px;
+      }
+      
+      /* Right column (page content) */
+      .الرئيسية {
+        width: 100%;
+        text-align:center;
+      }
+      
+      /* Style the search box */
+      #mySearch {
+        width: 140%;
+        font-size: 18px;
+        padding: 18px;
+        border: 1px solid #ddd;
+      }
+      
+      /* Style the navigation menu inside the left column */
+      #myMenu {
+        list-style-type: none;
+        padding: 10px;
+        margin: 10px;
+      }
+      
+      #myMenu li a {
+        padding: 12px;
+        text-decoration: inherit;
+        color: black;
+        display: block
+      }
+      
+      #myMenu li a:hover {
+        background-color: rgb(238, 238, 238);
+      }
+      .الرئيسية{
+          background-image:  url(./images/صحتك\ حياتك.png), url(paper.gif);
+          background-position: right bottom, left top;
+          background-repeat: no-repeat, repeat;
+          padding: 250px;
+          margin: 50px;
+      }
+      body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: white;
+        height: 100%;
+      }      
+      .side-bar {
+        display: flex;
+        height: 100%;
+      }
+      
+      .head-ul {
+        display: flex;
+        justify-content: center;
+      }      
+      .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgb(255, 255, 255);
+        padding: 25px;
+        height: 600px;
+        width: 700px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        display: flex;
+        color: olivedrab;
+        text-align: right;
+      }
+      .header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height:100% ;
+      }
+      
+      .navbar {
+        background-color: green;
+        color: white;
+        padding-bottom: 10px;
+      }
+      .head-a {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+      }
+      .title {
+        text-align: center;
+      }
+      .head-li {
+        display: inline;
+        padding: 15px;
+      }
+      .imgs {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        margin: 10px;
+      }
+      
+      .menu-title {
+        display: block;
+        text-align: center;
+      }
+      
+      .sidebar {
+        width: 200px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.74);
+        border-radius: 20px;
+      }
+      .side-a {
+        text-decoration: none;
+        color:green;
+      }
+      .side-ul {
+        margin-left: 40px;
+        align-self: center;
+        justify-content: center;
+      }
+      h2 {
+        margin-right: 25px;
+      }
+      p {
+        text-align: center;
+      }
+      .side-li {
+        padding: 10px;
+        list-style-type: none;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      th, td {
+        text-align: center;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {background-color: #f2f2f2;}
+      
+      .aa{
+        text-align: center;
+      }
+     #submit{
+       width: 15;
+      }
+      #taxt{
+        text-align: center;
+      }
+     

@@ -3,102 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stely.css" />
     <title>صحتك حياتك</title>
 </head>
 <body>
+<div class="row">
+  <div class="left" style="background-color:babyblue">
+    <h2>القائمة</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a  href="./النوادي الصحية.html">النوادي الصحية</a></li>
+      <li><a href="./المطاعم الصحية.html">المطاعم الصحية</a></li>
+    </ul>
+  </div>
+  
+  <div class="الرئيسية" style="background-color:green" >
+    <h2>صحتك حياتك</h2>
+    <br><br><br>
+  <div  class="كلام">
+   <h4>"من يملك الصحة يملك الأمل ومن يملك الأمل يملك كل شيء"</h4>
+    <br><br><br><br>
+    <h3>معنا سوف تصبح صحتك أفضل </h3>
+  </div>
+</div>
 
-    
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+</div>
 </body>
 </html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Page Base -->
-	<base href="https://trychocomania.com/"> 	<meta name="description" content="  Choco Mania ">   	<link href="https://trychocomania.com/ecdata/stores/DXOVU705/image/data/DemoImages/Logo/favicon.png" rel="icon"> 
-              <meta property="og:title" content="Choco Mania ">
-    <meta property="og:type" content="Store">
-    <meta property="og:url" content="https://trychocomania.com/">
-    <meta property="og:image" content="">
-    <meta property="og:description" content="  Choco Mania ">
-
-    <script type="text/javascript" async="" defer="" src="//analytics.expandcart.com/piwik.js"></script><script type="application/ld+json">
-        {
-          "@context": "http://schema.org",
-          "@type": "Store",
-          "name": "Choco Mania ",
-          "description": "  Choco Mania ",
-          "url": "https://trychocomania.com/",
-          "image": "",
-          "logo": "",
-          "openingHours": "Sa-Fr 00:00-23:59",
-          "telephone": "05123456789",
-          "address": "https://trychocomania.com/",
-          "priceRange": "$$$"
-        }
-    </script>
-    
-	<title> Choco Mania </title>
-
-
-	<!-- CSS Link -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="expandish/view/theme/widewhite/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="expandish/view/theme/widewhite/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="expandish/view/theme/widewhite/css/bootstrap-theme.css">
-	<link rel="stylesheet" type="text/css" href="expandish/view/theme/widewhite/css/jquery.fancybox.css">
-	<link rel="stylesheet" type="text/css" href="expandish/view/theme/widewhite/css/jquery-ui.min.css">
-	<link rel="stylesheet" type="text/css" href="expandish/view/theme/widewhite/css/owl.carousel.css">
-	<link rel="stylesheet" type="text/css" href="expandish/view/theme/widewhite/css/owl.transitions.css">
-	<link rel="stylesheet" type="text/css" href="expandish/view/theme/widewhite/css/owl.theme.css">
-	<link rel="stylesheet" type="text/css" href="expandish/view/theme/widewhite/css/jquery.mCustomScrollbar.css">
-	<link rel="stylesheet" type="text/css" href="expandish/view/theme/widewhite/css/animate.css">
-	<link rel="stylesheet" type="text/css" href="expandish/view/theme/widewhite/css/hover.css">
-	<link rel="stylesheet" type="text/css" href="expandish/view/theme/widewhite/css/push.css">
-	<link rel="stylesheet" type="text/css" href="expandish/view/theme/widewhite/css/browser.css" media="all">
-
-
-	<!-- Documets Links -->
-	
-	<!-- Link any custome css file in any page -->
-	
-
-
-
-	<!-- Link style and style-rtl and read variables in css files -->
-	<link rel="stylesheet" type="text/css" href="index.php?route=common/style">
-
-
-	<link rel="stylesheet" type="text/css" href="expandish/view/theme/widewhite/css/responsive.css" media="all">
-
-
-	<!-- JQuery Min Files -->
-	<script type="text/javascript" src="expandish/view/theme/widewhite/js/jquery.min.js"></script>
-	<script type="text/javascript" src="expandish/view/theme/abstract/js/rotate360.js"></script>
-	<script type="text/javascript" src="expandish/view/theme/widewhite/js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="expandish/view/theme/widewhite/js/common.js"></script>
-
-		<script type="text/javascript" src="expandish/view/javascript/common/d-social-login.js"></script>
-	
-	<!-- Inline Script:Start -->
-    	<!-- Inline Script:End -->
-
-	<!-- Google Analytics -->
-	<script type="text/javascript">
-        var _paq = _paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-        _paq.push(["setDomains", ["*."]]);
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-            var u="//analytics.expandcart.com/";
-            _paq.push(['setTrackerUrl', u+'piwik.php']);
-            _paq.push(['setSiteId', '39447']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-        })();
-</script>
-
-
-<style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
